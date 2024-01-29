@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Корзина</title>
+  <meta name="description" content="">
+  <!--    <script src="bootstrap/dist/js/bootstrap"></script>-->
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body class="is-main"  id="body">
+
+  <header class="header">
+	<div class="header-top">
+		<div class="container">
+			<div class="header-top__box">
+				<div class="header-top__adress">
+					<img width="20" height="20" class="svg" src="../../assets/img/map.svg">
+					<p class="contact-text">
+						Орел: <span>ул.Московское шоссе,173</span>
+					</p>
+				</div>
+				<div class="header-top__contacts-box">
+					<a href="tel:+79200888022" class="contact-link">
+						<img width="20" height="20" src="../../assets/img/tel.svg">
+						<p class="contact-text">
+							7 (920) <span>088-80-22</span>
+						</p>
+					</a>
+					<a href="mailto:info@service-centrum.ru" class="contact-link">
+						<img width="20" height="20" src="../../assets/img/mail.svg">
+						<p class="contact-text">
+							info@<span>service-centrum.ru</span>
+						</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header-bottom">
+		<div class="container">
+			<div class="header-bottom__box">
+				<a href="">
+					<img width="188" height="48" class="svg" src="../../assets/img/logo.svg">
+				</a>
+
+				<nav class="header-bottom__nav-box">
+					<a href="" class="header-bottom__nav-link">
+						<p class="header-bottom__nav-text">
+							Главная
+						</p>
+					</a>
+
+					<div class="header-bottom__catalog">
+						<a class="header-bottom__nav-link catalog" id="catalog">
+							<p class="header-bottom__nav-text">
+								Услуги
+							</p>
+							<img class="svg" src="../../assets/img/catalog-arrow.svg">
+
+						</a>
+						<!-- меню	 -->
+						<div class="catalog-drop" id="catalog-drop" data-drop>
+							<nav class="catalog-drop__container ">
+								<ul class="catalog-navigation">
+									<li class="catalog-navigation__item">
+										<a class="catalog-navigation__link" href="">Все товары
+										</a>
+									</li>
+									<li class="catalog-navigation__item">
+										<a class="catalog-navigation__link" href=""> Моторные
+										</a>
+									</li>
+									<li class="catalog-navigation__item">
+										<a class="catalog-navigation__link" href="">Трансмиссионные
+										</a>
+									</li>
+									<li class="catalog-navigation__item">
+										<a class="catalog-navigation__link" href="">Жидкости охлаждения
+										</a>
+									</li>
+									<li class="catalog-navigation__item">
+										<a class="catalog-navigation__link" href="">Спец Жидкости
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!---->
+					</div>
+
+					<a href="" class="header-bottom__nav-link">
+						<p class="header-bottom__nav-text">
+							Преимущества
+						</p>
+					</a>
+					<a href="" class="header-bottom__nav-link">
+						<p class="header-bottom__nav-text">
+							Контакты
+						</p>
+					</a>
+				</nav>
+
+
+				<div class="header__register">
+					<button id="register" class="header-bottom__btn">
+						Записаться
+					</button>
+					<!-- модалка записи -->
+					<div class="register-drop" id="register-drop" data-drop>
+						<nav class="catalog-drop__container ">
+							<ul class="catalog-navigation">
+								<li class="catalog-navigation__item">
+									<a class="catalog-navigation__link" href="">Все товары
+									</a>
+								</li>
+								<li class="catalog-navigation__item">
+									<a class="catalog-navigation__link" href=""> Моторные
+									</a>
+								</li>
+								<li class="catalog-navigation__item">
+									<a class="catalog-navigation__link" href="">Трансмиссионные
+									</a>
+								</li>
+								<li class="catalog-navigation__item">
+									<a class="catalog-navigation__link" href="">Жидкости охлаждения
+									</a>
+								</li>
+								<li class="catalog-navigation__item">
+									<a class="catalog-navigation__link" href="">Спец Жидкости
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!---->
+				</div>
+
+			</div>
+		</div>
+	</div>
+</header>
+ 
+
+
+  
+<section class="breadcrumb-section">
+  <div class="container">
+    <div class="breadcrumb__wrapper">
+      <ul class="breadcrumb">
+        <li class="breadcrumb__item"><a href="#" class="breadcrumb__link">Главная</a>
+        </li>
+        <li class="breadcrumb__item"><span class="breadcrumb__span">Корзина </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section> 
+<section class="order-page">
+  <div class="container">
+    <div class="order-page__cart">
+      <div class="title-wrapper title-wrapper__count">
+        <h2 class="title">
+          Корзина
+        </h2>
+        <p class="title__count">
+          <span>7</span> товаров
+        </p>
+      </div>
+
+      <ul class="order-page__card-list">
+        <li class="order-page__card-item">
+          <div class="order-card">
+            <div class="order-card__img-box">
+              <img src="assets/img/oil1.jpg" alt="Oil">
+            </div>
+            <a href="" class="order-card__title">
+              Полусинтетическое трансмиссионное масло 2Т 100 мл Витязь 18025015
+            </a>
+
+            <button class="order-card__del">
+              <img class="svg order-card__del-img" src="assets/img/del.svg" alt="удалить">
+            </button>
+
+
+            <ul class="order-card__param-list">
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Артикул:
+                </p>
+                <p class="order-card__param-text order-card__param-text--art">
+                  16004753
+                </p>
+              </li>
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Тип масла:
+                </p>
+                <p class="order-card__param-text">
+                  трансмиссионное
+                </p>
+              </li>
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Состав:
+                </p>
+                <p class="order-card__param-text">
+                  полусинтетическое
+                </p>
+              </li>
+            </ul>
+
+
+            <div class="order-card__price">
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param">
+                  Цена
+                </p>
+                <div class="product-card__order-price-box">
+
+                  <p class="product-card__order-price">
+                    1 056 <span> ₽</span>
+                  </p>
+                  <p class="card__price-old ">
+                    2 543 <span> ₽</span>
+                  </p>
+                </div>
+              </div>
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param ">
+                  Количество
+                </p>
+                <div class="count dotted__bg dotted__bg--count">
+                  <button class="count__minus">
+                    -
+                  </button>
+                  <div class="count__order">
+                    0
+                  </div>
+                  <button class="count__plus">
+                    +
+                  </button>
+                </div>
+              </div>
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param">
+                  Итого
+                </p>
+                <p class="product-card__order-price product-card__order-price--all">
+                  55 056 <span> ₽</span>
+                </p>
+              </div>
+
+
+
+            </div>
+          </div>
+        </li>
+        <li class="order-page__card-item">
+          <div class="order-card">
+            <div class="order-card__img-box">
+              <img src="assets/img/oil1.jpg" alt="Oil">
+            </div>
+            <a href="" class="order-card__title">
+              Полусинтетическое трансмиссионное масло 2Т 100 мл Витязь 18025015
+            </a>
+
+            <button class="order-card__del">
+              <img class="svg order-card__del-img" src="assets/img/del.svg" alt="удалить">
+            </button>
+
+
+            <ul class="order-card__param-list">
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Артикул:
+                </p>
+                <p class="order-card__param-text order-card__param-text--art">
+                  16004753
+                </p>
+              </li>
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Тип масла:
+                </p>
+                <p class="order-card__param-text">
+                  трансмиссионное
+                </p>
+              </li>
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Состав:
+                </p>
+                <p class="order-card__param-text">
+                  полусинтетическое
+                </p>
+              </li>
+            </ul>
+
+
+            <div class="order-card__price">
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param">
+                  Цена
+                </p>
+                <div class="product-card__order-price-box">
+
+                  <p class="product-card__order-price">
+                    1 056 <span> ₽</span>
+                  </p>
+                  <p class="card__price-old ">
+                    2 543 <span> ₽</span>
+                  </p>
+                </div>
+              </div>
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param ">
+                  Количество
+                </p>
+                <div class="count dotted__bg dotted__bg--count">
+                  <button class="count__minus">
+                    -
+                  </button>
+                  <div class="count__order">
+                    0
+                  </div>
+                  <button class="count__plus">
+                    +
+                  </button>
+                </div>
+              </div>
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param">
+                  Итого
+                </p>
+                <p class="product-card__order-price product-card__order-price--all">
+                  55 056 <span> ₽</span>
+                </p>
+              </div>
+
+
+
+            </div>
+          </div>
+        </li>
+        <li class="order-page__card-item">
+          <div class="order-card">
+            <div class="order-card__img-box">
+              <img src="assets/img/oil1.jpg" alt="Oil">
+            </div>
+            <a href="" class="order-card__title">
+              Полусинтетическое трансмиссионное масло 2Т 100 мл Витязь 18025015
+            </a>
+
+            <button class="order-card__del">
+              <img class="svg order-card__del-img" src="assets/img/del.svg" alt="удалить">
+            </button>
+
+
+            <ul class="order-card__param-list">
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Артикул:
+                </p>
+                <p class="order-card__param-text order-card__param-text--art">
+                  16004753
+                </p>
+              </li>
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Тип масла:
+                </p>
+                <p class="order-card__param-text">
+                  трансмиссионное
+                </p>
+              </li>
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Состав:
+                </p>
+                <p class="order-card__param-text">
+                  полусинтетическое
+                </p>
+              </li>
+            </ul>
+
+
+            <div class="order-card__price">
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param">
+                  Цена
+                </p>
+                <div class="product-card__order-price-box">
+
+                  <p class="product-card__order-price">
+                    1 056 <span> ₽</span>
+                  </p>
+                  <p class="card__price-old ">
+                    2 543 <span> ₽</span>
+                  </p>
+                </div>
+              </div>
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param ">
+                  Количество
+                </p>
+                <div class="count dotted__bg dotted__bg--count">
+                  <button class="count__minus">
+                    -
+                  </button>
+                  <div class="count__order">
+                    0
+                  </div>
+                  <button class="count__plus">
+                    +
+                  </button>
+                </div>
+              </div>
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param">
+                  Итого
+                </p>
+                <p class="product-card__order-price product-card__order-price--all">
+                  55 056 <span> ₽</span>
+                </p>
+              </div>
+
+
+
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="order-page__all-price">
+        <p class="order-page__all-price-title">
+          ОБЩАЯ СУММА:
+        </p>
+        <p class="order-page__all-price-text">
+          55 056 <span> ₽</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="order-page__registration">
+      <div class="title-wrapper">
+        <h2 class="title">
+          Оформление заказа
+        </h2>
+      </div>
+
+      <div class="order-page__registration-block">
+        <p class="order-page__registration-subtitle">
+          <span>1.</span> Контактная информация
+        </p>
+
+        <div class="order-page__form-box">
+          <form class="order-page__form" action="">
+            <div class="order-page__form-item order-page__form-fio">
+              <label for="fio"> ФИО*</label>
+              <input required class="order-page__input" id="fio" type="text">
+            </div>
+            <div class="order-page__form-item order-page__form-tel">
+              <label for="tel"> номер телефона*</label>
+              <input required class="order-page__input" id="tel" type="tel">
+            </div>
+            <div class="order-page__form-item order-page__form-mail">
+              <label for="mail">email</label>
+              <input class="order-page__input" id="mail" type="email">
+            </div>
+            <div class="order-page__form-item order-page__form-comment">
+              <label for="comment">Комментарий </label>
+              <textarea class="order-page__input" id="comment" rows="1"></textarea>
+            </div>
+
+            <p class="order-page__form-text">
+              * Поля являются обязательными для заполнения
+            </p>
+            <div class="order-page__form-check">
+              <label class="filter__check form-cheaper__checkbox" for="checkbox-form">
+                <input class="checkbox__input" type="checkbox" name="data" id="checkbox-form">
+                <span class="checkbox__custom"></span>
+                <div class="checkbox__text">
+                  <p class="order-page__form-checkbox-text">Я согласен с условиями <a href="">передачи данных.</a></p>
+                </div>
+              </label>
+            </div>
+            <p class="order-page__form-desc">
+              После оформления заказа на указаный номер телефона придет sms-сообщение с номером заказа. Если вы
+              оставляете адрес электронной почты, то на указанный адрес автоматически сформируется и отправится состав
+              заказа и его описание.
+            </p>
+
+            <button type="submit" class="button order-page__form-btn">
+              Оформить
+            </button>
+          </form>
+        </div>
+      </div>
+
+
+      <div class="order-page__registration-block">
+        <p class="order-page__registration-subtitle">
+          <span>2.</span> Оплата
+        </p>
+
+        <p class="order-page__form-desc">
+          Вы можете оплатить несколькими способами
+        </p>
+
+        <ul class="order-page__payment-list">
+          <li class="order-page__payment-item">
+            <img src="assets/img/payment1.svg" alt="Наличный расчет">
+            <p class="order-page__payment-text">
+              наличный расчет
+            </p>
+          </li>
+          <li class="order-page__payment-item">
+            <img src="assets/img/payment2.svg" alt="Банковская карта">
+            <p class="order-page__payment-text">
+              Банковская карта
+            </p>
+          </li>
+          <li class="order-page__payment-item">
+            <img src="assets/img/payment3.svg" alt="безналичный расчет">
+            <p class="order-page__payment-text">
+              безналичный расчет
+            </p>
+          </li>
+        </ul>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="order-page__delivery">
+  <div class="container">
+
+    <div class="order-page__registration-block">
+      <p class="order-page__registration-subtitle">
+        <span>3.</span> Доставка
+      </p>
+
+      <p class="order-page__form-desc">
+        Доставка товара транспортными компаниями производится по всей территории России.
+      </p>
+
+      <ul class="order-page__delivery-list">
+        <li class="order-page__delivery-item">
+          <img src="assets/img/tk1.svg" alt="СДЭК">
+        </li>
+        <li class="order-page__delivery-item">
+          <img src="assets/img/tk2.svg" alt="ЖДЭ">
+        </li>
+        <li class="order-page__delivery-item">
+          <img src="assets/img/tk3.svg" alt="КИТ">
+        </li>
+        <li class="order-page__delivery-item">
+          <img src="assets/img/tk4.svg" alt="ПЭК">
+        </li>
+        <li class="order-page__delivery-item">
+          <img src="assets/img/tk5.svg" alt="Деловые линии">
+        </li>
+      </ul>
+
+      <p class="order-page__form-desc">
+        Самовывоз товара осуществляется по адресу: Орел, ул.Московское шоссе,173
+      </p>
+    </div>
+  </div>
+
+  <div class="map-wrapper temporary-page__contacts-map">
+  <div class="contact-section__map">
+    <div class="container">
+      <div class="map-placemark-area">
+        <div class="map-placemark">
+          <div class="map-placemark__header">
+            <img src="../../assets/img/logo.svg" alt="ТорнадоОйл" class="map-placemark__logo">
+          </div>
+          <div class="map-placemark__body">
+            <div class="map-placemark__contact">
+              <div class="map-placemark__icon-area">
+                <img src="../../assets/img/map.svg" alt="Локация" class="map-placemark__icon">
+              </div>
+              <span class="map-placemark__text">Орел, ул.Московское шоссе,173</span>
+            </div>
+            <div class="map-placemark__contact">
+              <div class="map-placemark__icon-area">
+                <img src="../../assets/img/tel.svg" alt="Номер телефона">
+              </div>
+              <a href="tel:+7486263-00-23" class="map-placemark__text">
+                +7 (4862) 63-00-23 </a>
+            </div>
+            <div class="map-placemark__contact">
+              <div class="map-placemark__icon-area">
+                <img src="../../assets/img/mail.svg" alt="Номер телефона" class="svg">
+              </div>
+              <a href="mailto:konstantin.glushkov@mtkrosberg.ru" class="map-placemark__text">
+
+                sale@tornadooil.ru
+              </a>
+            </div>
+            <!-- <div class="map-placemark__contact">
+                  <div class="map-placemark__icon-area">
+                    <img src="../../assets/img/clock.svg" alt="Время">
+                  </div>
+                  <span class="map-placemark__text"><span>пн-сб </span>с 9.00 до 18.00,</span>
+                </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map" id="map" style="height: 375px; width: 100%; z-index: 2; position: relative">
+
+    </div>
+  </div>
+
+</div>
+</section>
+
+
+
+
+
+  <footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-top__box">
+        <div class="footer-top__left">
+          <a class="footer-top__logo" href="">
+            <img src="../../assets/img/logo-footer.svg" alt="Logo">
+          </a>
+          <a class="footer-top__tel-mob" href="tel:++74862630023">
+            <span>+7 (4862)</span> 63-00-23
+          </a>
+          <p class="footer-top__left-text">
+            Вы можете отправить заявку на почту, и наш менеджер свяжется с вами.
+          </p>
+          <button class="footer-top__left-btn">
+            Оставить заявку
+          </button>
+          <a href="" class="footer-top__left-link">
+            Пользовательское соглашение
+          </a>
+        </div>
+        <div class="footer-top__center">
+          <p class="footer-top__nav-title">
+            Каталог
+          </p>
+          <nav>
+            <ul class="footer-top__list">
+              <li class="footer-top__item">
+                <a href="" class="footer-top__link">
+                  Трансмиссионные масла
+                </a>
+              </li>
+              <li class="footer-top__item">
+                <a href="" class="footer-top__link">
+                  Моторные масла
+                </a>
+              </li>
+              <li class="footer-top__item">
+                <a href="" class="footer-top__link">
+                  Охлаждающие жидкости
+                </a>
+              </li>
+              <li class="footer-top__item">
+                <a href="" class="footer-top__link">
+                  Спецжидкости и смазки
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer-top__right">
+          <p class="footer-top__nav-title">
+            КОНТАКТЫ
+          </p>
+          <nav>
+            <ul class="footer-top__list">
+              <li class="footer-top__item">
+                <a href="" class="footer-top__contact">
+                  <img class="svg" src="../../assets/img/tel-footer.svg">
+                  <span>+7 (4862) 63-00-23</span>
+                </a>
+              </li>
+              <li class="footer-top__item">
+                <a href="" class="footer-top__contact">
+                  <img class="svg" src="../../assets/img/tel-footer.svg">
+                  <span>+7 (4862) 63-00-23 доб. 550</span>
+                </a>
+              </li>
+              <li class="footer-top__item">
+                <a href="" class="footer-top__contact">
+                  <img class="svg" src="../../assets/img/mail-footer.svg">
+                  <span>moscow@mtkrosberg.ru </span>
+                </a>
+              </li>
+              <li class="footer-top__item">
+                <a href="" class="footer-top__contact">
+                  <img class="svg" src="../../assets/img/mail-footer.svg">
+                  <span>moscow@mtkrosberg.ru</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-btm">
+    <div class="container">
+      <p class="footer-btm__text">©<span id="year"></span> ТорнадоОйл. Автомасла и смазки по низким ценам от лучших производителей. Сайт носит исключительно информационный характер и никакая информация, опубликованная на нём, ни при каких условиях не является публичной офертой, определяемой положениями пункта 2 статьи 437 Гражданского кодекса Российской Федерации. Информация, фотографии и характеристики товара могут отличаться от фактических параметров. Уточняйте информацию у менеджеров и внимательно проверяйте все характеристики при получении товара.</p> 
+    </div>
+    </div>
+</footer>
+  
+
+
+  <!--<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>-->
+
+  <script src="assets/libs/jquery.js"></script>
+  <script src="assets/libs/jquery-ui.js"></script>
+  <script src="assets/libs/jquery-ui-touch.js"></script>
+  <script src="assets/libs/rangeslider.js"></script>
+  <script src="assets/libs/aos.js"></script>
+  <script src="assets/libs/swiper.js"></script>
+  <script src="assets/libs/select2.js"></script>
+  <!-- <script src="assets/libs/popper.js"></script>
+  <script src="assets/libs/tippy.js"></script> -->
+  <script src="assets/libs/fancyapps.js"></script>
+  <script src="assets/libs/air-datepicker.js"></script>
+  <script src="assets/js/app.js"></script>
+
+
+  <script>
+    AOS.init()
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+    integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous">
+    </script>
+
+
+  <script>
+
+    window.addEventListener('scroll', function () {
+
+      SmoothScroll({
+        // Время скролла 400 = 0.4 секунды
+        animationTime: 800,
+        // Размер шага в пикселях
+        stepSize: 75,
+
+        // Дополнительные настройки:
+
+        // Ускорение
+        accelerationDelta: 30,
+        // Максимальное ускорение
+        accelerationMax: 2,
+
+        // Поддержка клавиатуры
+        keyboardSupport: true,
+        // Шаг скролла стрелками на клавиатуре в пикселях
+        arrowScroll: 50,
+
+        // Pulse (less tweakable)
+        // ratio of "tail" to "acceleration"
+        pulseAlgorithm: true,
+        pulseScale: 4,
+        pulseNormalize: 1,
+
+        // Поддержка тачпада
+        touchpadSupport: true,
+      })
+    })
+
+  </script>
+
+  <script type="text/javascript">
+    //Дождёмся загрузки API и готовности DOM.
+    ymaps.ready(init);
+
+    function init() {
+      // в этой версии координаты просто элементы массива (и они поменяны местами)
+      if (document.querySelector('.map') === null) return
+      let map = document.querySelector('.map')
+      let destinations = {
+        'OR': [52.973583, 36.096968], //орел
+        'KOM': [52.937419, 36.041649], //Магазин на Комсомольской, 270
+        'MIX': [52.993878, 36.114596], //Магазин на Михалицына, 10
+        'LOM': [52.981875, 36.069292], //Магазин на Ломоносова, 6Б
+      },
+
+        // Создание экземпляра карты и его привязка к контейнеру с
+        // заданным id ("map").
+        myMap = new ymaps.Map('map', {
+          // При инициализации карты обязательно нужно указать
+          // её центр и коэффициент масштабирования.
+          center: destinations['OR'], // Московское шоссе, д.173
+          zoom: 11.5
+        });
+      // куда скакать
+      function clickGoto() {
+        // город
+
+        let pos = this.getAttribute('data-name');
+        map.scrollIntoView({
+          block: "start",
+          behavior: "smooth"
+        })
+
+        // переходим по координатам
+
+
+        myMap.setZoom(16, { duration: 700 }).then(() => {
+          myMap.panTo(destinations[pos], {
+            flying: 1,
+            checkZoomRange: true
+          });
+
+        });
+        return false;
+      }
+      // навешиваем обработчики
+      let col = document.getElementsByClassName('sh-card__btn');
+      for (let i = 0, n = col.length; i < n; ++i) {
+        col[i].onclick = clickGoto;
+      }
+
+      // Добавление метки
+      // https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/reference/Placemark-docpage/
+      let myPlacemark = new ymaps.Placemark(destinations['KOM'], {}, {
+        //опции
+        iconLayout: 'default#image',
+        iconImageHref: '../assets/img/img-49.svg',
+        iconImageSize: [35, 45],
+        iconImageOffset: [-20, -50],
+      });
+      let myPlacemark1 = new ymaps.Placemark(destinations['MIX'], {}, {
+        //опции
+        iconLayout: 'default#image',
+        iconImageHref: '../assets/img/img-49.svg',
+        iconImageSize: [35, 45],
+        iconImageOffset: [-20, -50],
+      });
+      let myPlacemark2 = new ymaps.Placemark(destinations['LOM'], {}, {
+        //опции
+        iconLayout: 'default#image',
+        iconImageHref: '../assets/img/img-49.svg',
+        iconImageSize: [35, 45],
+        iconImageOffset: [-20, -50],
+      });
+      // После того как метка была создана, добавляем её на карту.
+      myMap.geoObjects.add(myPlacemark);
+      myMap.geoObjects.add(myPlacemark1);
+      myMap.geoObjects.add(myPlacemark2);
+    }
+  </script>
+
+</body>
+
+</html>

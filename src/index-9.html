@@ -1,0 +1,429 @@
+{% set title = "Корзина" %}
+{% set bodyClass = "is-main" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+{% include "html/includes/breadcrumbs.html" %}
+<section class="order-page">
+  <div class="container">
+    <div class="order-page__cart">
+      <div class="title-wrapper title-wrapper__count">
+        <h2 class="title">
+          Корзина
+        </h2>
+        <p class="title__count">
+          <span>7</span> товаров
+        </p>
+      </div>
+
+      <ul class="order-page__card-list">
+        <li class="order-page__card-item">
+          <div class="order-card">
+            <div class="order-card__img-box">
+              <img src="assets/img/oil1.jpg" alt="Oil">
+            </div>
+            <a href="" class="order-card__title">
+              Полусинтетическое трансмиссионное масло 2Т 100 мл Витязь 18025015
+            </a>
+
+            <button class="order-card__del">
+              <img class="svg order-card__del-img" src="assets/img/del.svg" alt="удалить">
+            </button>
+
+
+            <ul class="order-card__param-list">
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Артикул:
+                </p>
+                <p class="order-card__param-text order-card__param-text--art">
+                  16004753
+                </p>
+              </li>
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Тип масла:
+                </p>
+                <p class="order-card__param-text">
+                  трансмиссионное
+                </p>
+              </li>
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Состав:
+                </p>
+                <p class="order-card__param-text">
+                  полусинтетическое
+                </p>
+              </li>
+            </ul>
+
+
+            <div class="order-card__price">
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param">
+                  Цена
+                </p>
+                <div class="product-card__order-price-box">
+
+                  <p class="product-card__order-price">
+                    1 056 <span> ₽</span>
+                  </p>
+                  <p class="card__price-old ">
+                    2 543 <span> ₽</span>
+                  </p>
+                </div>
+              </div>
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param ">
+                  Количество
+                </p>
+                <div class="count dotted__bg dotted__bg--count">
+                  <button class="count__minus">
+                    -
+                  </button>
+                  <div class="count__order">
+                    0
+                  </div>
+                  <button class="count__plus">
+                    +
+                  </button>
+                </div>
+              </div>
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param">
+                  Итого
+                </p>
+                <p class="product-card__order-price product-card__order-price--all">
+                  55 056 <span> ₽</span>
+                </p>
+              </div>
+
+
+
+            </div>
+          </div>
+        </li>
+        <li class="order-page__card-item">
+          <div class="order-card">
+            <div class="order-card__img-box">
+              <img src="assets/img/oil1.jpg" alt="Oil">
+            </div>
+            <a href="" class="order-card__title">
+              Полусинтетическое трансмиссионное масло 2Т 100 мл Витязь 18025015
+            </a>
+
+            <button class="order-card__del">
+              <img class="svg order-card__del-img" src="assets/img/del.svg" alt="удалить">
+            </button>
+
+
+            <ul class="order-card__param-list">
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Артикул:
+                </p>
+                <p class="order-card__param-text order-card__param-text--art">
+                  16004753
+                </p>
+              </li>
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Тип масла:
+                </p>
+                <p class="order-card__param-text">
+                  трансмиссионное
+                </p>
+              </li>
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Состав:
+                </p>
+                <p class="order-card__param-text">
+                  полусинтетическое
+                </p>
+              </li>
+            </ul>
+
+
+            <div class="order-card__price">
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param">
+                  Цена
+                </p>
+                <div class="product-card__order-price-box">
+
+                  <p class="product-card__order-price">
+                    1 056 <span> ₽</span>
+                  </p>
+                  <p class="card__price-old ">
+                    2 543 <span> ₽</span>
+                  </p>
+                </div>
+              </div>
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param ">
+                  Количество
+                </p>
+                <div class="count dotted__bg dotted__bg--count">
+                  <button class="count__minus">
+                    -
+                  </button>
+                  <div class="count__order">
+                    0
+                  </div>
+                  <button class="count__plus">
+                    +
+                  </button>
+                </div>
+              </div>
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param">
+                  Итого
+                </p>
+                <p class="product-card__order-price product-card__order-price--all">
+                  55 056 <span> ₽</span>
+                </p>
+              </div>
+
+
+
+            </div>
+          </div>
+        </li>
+        <li class="order-page__card-item">
+          <div class="order-card">
+            <div class="order-card__img-box">
+              <img src="assets/img/oil1.jpg" alt="Oil">
+            </div>
+            <a href="" class="order-card__title">
+              Полусинтетическое трансмиссионное масло 2Т 100 мл Витязь 18025015
+            </a>
+
+            <button class="order-card__del">
+              <img class="svg order-card__del-img" src="assets/img/del.svg" alt="удалить">
+            </button>
+
+
+            <ul class="order-card__param-list">
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Артикул:
+                </p>
+                <p class="order-card__param-text order-card__param-text--art">
+                  16004753
+                </p>
+              </li>
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Тип масла:
+                </p>
+                <p class="order-card__param-text">
+                  трансмиссионное
+                </p>
+              </li>
+              <li class="order-card__param-item">
+                <p class="order-card__param-title">
+                  Состав:
+                </p>
+                <p class="order-card__param-text">
+                  полусинтетическое
+                </p>
+              </li>
+            </ul>
+
+
+            <div class="order-card__price">
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param">
+                  Цена
+                </p>
+                <div class="product-card__order-price-box">
+
+                  <p class="product-card__order-price">
+                    1 056 <span> ₽</span>
+                  </p>
+                  <p class="card__price-old ">
+                    2 543 <span> ₽</span>
+                  </p>
+                </div>
+              </div>
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param ">
+                  Количество
+                </p>
+                <div class="count dotted__bg dotted__bg--count">
+                  <button class="count__minus">
+                    -
+                  </button>
+                  <div class="count__order">
+                    0
+                  </div>
+                  <button class="count__plus">
+                    +
+                  </button>
+                </div>
+              </div>
+              <div class="order-card__price-item">
+                <p class="product-card__desc-title product-card__order-title-param">
+                  Итого
+                </p>
+                <p class="product-card__order-price product-card__order-price--all">
+                  55 056 <span> ₽</span>
+                </p>
+              </div>
+
+
+
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="order-page__all-price">
+        <p class="order-page__all-price-title">
+          ОБЩАЯ СУММА:
+        </p>
+        <p class="order-page__all-price-text">
+          55 056 <span> ₽</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="order-page__registration">
+      <div class="title-wrapper">
+        <h2 class="title">
+          Оформление заказа
+        </h2>
+      </div>
+
+      <div class="order-page__registration-block">
+        <p class="order-page__registration-subtitle">
+          <span>1.</span> Контактная информация
+        </p>
+
+        <div class="order-page__form-box">
+          <form class="order-page__form" action="">
+            <div class="order-page__form-item order-page__form-fio">
+              <label for="fio"> ФИО*</label>
+              <input required class="order-page__input" id="fio" type="text">
+            </div>
+            <div class="order-page__form-item order-page__form-tel">
+              <label for="tel"> номер телефона*</label>
+              <input required class="order-page__input" id="tel" type="tel">
+            </div>
+            <div class="order-page__form-item order-page__form-mail">
+              <label for="mail">email</label>
+              <input class="order-page__input" id="mail" type="email">
+            </div>
+            <div class="order-page__form-item order-page__form-comment">
+              <label for="comment">Комментарий </label>
+              <textarea class="order-page__input" id="comment" rows="1"></textarea>
+            </div>
+
+            <p class="order-page__form-text">
+              * Поля являются обязательными для заполнения
+            </p>
+            <div class="order-page__form-check">
+              <label class="filter__check form-cheaper__checkbox" for="checkbox-form">
+                <input class="checkbox__input" type="checkbox" name="data" id="checkbox-form">
+                <span class="checkbox__custom"></span>
+                <div class="checkbox__text">
+                  <p class="order-page__form-checkbox-text">Я согласен с условиями <a href="">передачи данных.</a></p>
+                </div>
+              </label>
+            </div>
+            <p class="order-page__form-desc">
+              После оформления заказа на указаный номер телефона придет sms-сообщение с номером заказа. Если вы
+              оставляете адрес электронной почты, то на указанный адрес автоматически сформируется и отправится состав
+              заказа и его описание.
+            </p>
+
+            <button type="submit" class="button order-page__form-btn">
+              Оформить
+            </button>
+          </form>
+        </div>
+      </div>
+
+
+      <div class="order-page__registration-block">
+        <p class="order-page__registration-subtitle">
+          <span>2.</span> Оплата
+        </p>
+
+        <p class="order-page__form-desc">
+          Вы можете оплатить несколькими способами
+        </p>
+
+        <ul class="order-page__payment-list">
+          <li class="order-page__payment-item">
+            <img src="assets/img/payment1.svg" alt="Наличный расчет">
+            <p class="order-page__payment-text">
+              наличный расчет
+            </p>
+          </li>
+          <li class="order-page__payment-item">
+            <img src="assets/img/payment2.svg" alt="Банковская карта">
+            <p class="order-page__payment-text">
+              Банковская карта
+            </p>
+          </li>
+          <li class="order-page__payment-item">
+            <img src="assets/img/payment3.svg" alt="безналичный расчет">
+            <p class="order-page__payment-text">
+              безналичный расчет
+            </p>
+          </li>
+        </ul>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="order-page__delivery">
+  <div class="container">
+
+    <div class="order-page__registration-block">
+      <p class="order-page__registration-subtitle">
+        <span>3.</span> Доставка
+      </p>
+
+      <p class="order-page__form-desc">
+        Доставка товара транспортными компаниями производится по всей территории России.
+      </p>
+
+      <ul class="order-page__delivery-list">
+        <li class="order-page__delivery-item">
+          <img src="assets/img/tk1.svg" alt="СДЭК">
+        </li>
+        <li class="order-page__delivery-item">
+          <img src="assets/img/tk2.svg" alt="ЖДЭ">
+        </li>
+        <li class="order-page__delivery-item">
+          <img src="assets/img/tk3.svg" alt="КИТ">
+        </li>
+        <li class="order-page__delivery-item">
+          <img src="assets/img/tk4.svg" alt="ПЭК">
+        </li>
+        <li class="order-page__delivery-item">
+          <img src="assets/img/tk5.svg" alt="Деловые линии">
+        </li>
+      </ul>
+
+      <p class="order-page__form-desc">
+        Самовывоз товара осуществляется по адресу: Орел, ул.Московское шоссе,173
+      </p>
+    </div>
+  </div>
+
+  {% include "html/includes/map.html" %}
+</section>
+
+
+
+{% endblock %}

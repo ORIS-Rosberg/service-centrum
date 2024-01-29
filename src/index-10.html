@@ -1,0 +1,63 @@
+{% set title = "О компании" %}
+{% set bodyClass = "is-main" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+{% include "html/includes/breadcrumbs.html" %}
+
+<section class="company-page">
+  <div class="container">
+    <div class="title-wrapper">
+      <h2 class="title">
+        О компании
+      </h2>
+    </div>
+    <div class="company-page__text-box">
+      <p class="company-page__text">
+        Наша компания появилась на орловском рынке шин, масел, АКБ, запасных частей и автомобильных аксессуаров
+        сравнительно недавно. Она включает в себя сеть центров «Протектор 57» на Михалицына 10, Ломоносова 6Б ТЦ "Утёс"
+        и Комсомольской 270, легковой и грузовой шиномонтажи, а также интернет-магазин. Эта единая система розничной
+        продажи и предоставления сопутствующих услуг позволяет делать низкие цены на товары, тем самым становясь ближе к
+        клиенту.
+      </p>
+      <p class="company-page__text">
+        Мы работаем не только с розничными покупателями, но и с юридическими лицами, индивидуальными предпринимателями
+        как за наличный расчет, так по безналичному расчету. Для организаций, работающих на общей системе
+        налогообложения, наша компания при безналичной форме расчетов выделяет НДС.
+      </p>
+      <p class="company-page__text">
+        Надеемся, что после посещения магазина Вы останетесь довольны и станете нашим постоянным клиентом.
+      </p>
+    </div>
+
+    <div class="swiper-area">
+      <div class="swiper swiper-company">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/img/img2.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/img1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/img2.jpg" alt="">
+
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/img/img1.jpg" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="swiper-pagination swiper-company__swiper-pagination">
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

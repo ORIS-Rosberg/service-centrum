@@ -1,0 +1,174 @@
+{% set title = "Ссылки" %}
+{% set bodyClass = "is-main" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+{% include "html/includes/breadcrumbs.html" %}
+
+
+<section class="product-card section-style">
+  <div class="container">
+    <div class="title-wrapper product-card__title">
+      <h2 class="title">
+        Масло Super 10W-40 4л, Gazpromneft 253142142
+      </h2>
+    </div>
+
+
+    <div class="product-card__box">
+      <div class="product-card__img-wrapper">
+        <img src="assets/img/product.jpg" alt="Фото продукта">
+      </div>
+
+      <ul class="product-card__desc-list">
+        <li class="product-card__desc-item">
+          <p class="product-card__desc-bg product-card__desc-title">
+            Артикул:
+          </p>
+          <p class="product-card__desc-bg product-card__desc-parameter">
+            16004753
+          </p>
+        </li>
+        <li class="product-card__desc-item">
+          <p class="product-card__desc-bg product-card__desc-title">
+            Тип масла:
+          </p>
+          <p class="product-card__desc-bg product-card__desc-parameter">
+            полусинтетическое
+          </p>
+        </li>
+        <li class="product-card__desc-item">
+          <p class="product-card__desc-bg product-card__desc-title">
+            Состав:
+          </p>
+          <p class="product-card__desc-bg product-card__desc-parameter">
+            полусинтетическое
+          </p>
+        </li>
+        <li class="product-card__desc-item">
+          <p class="product-card__desc-bg product-card__desc-title">
+            Тип двигателя:
+          </p>
+          <p class="product-card__desc-bg product-card__desc-parameter">
+            бензин
+          </p>
+        </li>
+        <li class="product-card__desc-item">
+          <p class="product-card__desc-bg product-card__desc-title">
+            Объем:
+          </p>
+          <p class="product-card__desc-bg product-card__desc-parameter">
+            5л
+          </p>
+        </li>
+        <li class="product-card__desc-item">
+          <p class="product-card__desc-bg product-card__desc-title">
+            Вязксоть:
+          </p>
+          <p class="product-card__desc-bg product-card__desc-parameter">
+            5w40
+          </p>
+        </li>
+        <li class="product-card__desc-item">
+          <p class="product-card__desc-bg product-card__desc-title">
+            OEM:
+          </p>
+          <p class="product-card__desc-bg product-card__desc-parameter">
+            5w40
+          </p>
+        </li>
+        <li class="product-card__desc-item">
+          <p class="product-card__desc-bg product-card__desc-title">
+            API:
+          </p>
+          <p class="product-card__desc-bg product-card__desc-parameter">
+            5w40
+          </p>
+        </li>
+        <li class="product-card__desc-item">
+          <p class="product-card__desc-bg product-card__desc-title">
+            ACEA:
+          </p>
+          <p class="product-card__desc-bg product-card__desc-parameter">
+            5w40
+          </p>
+        </li>
+      </ul>
+
+      <!-- <div class="product-card__desc-available">
+          <p class="product-card__desc-available-text">
+            В наличии <span>2</span> шт.
+          </p>
+        </div> -->
+
+
+      <div class="product-card__order">
+        <p class="product-card__order-title">
+          Добавить в корзину
+        </p>
+        <ul class="product-card__order-list">
+          <li class="product-card__order-item dotted">
+            <p class="product-card__desc-title product-card__order-title-param dotted__bg">
+              Цена
+            </p>
+            <div class="product-card__order-price-box  dotted__bg dotted__bg--count">
+
+              <p class="product-card__order-price">
+                1 056 <span> ₽</span>
+              </p>
+              <p class="card__price-old ">
+                2 543 <span> ₽</span>
+              </p>
+            </div>
+          </li>
+          <li class="product-card__order-item dotted">
+            <p class="product-card__desc-title product-card__order-title-param dotted__bg">
+              Количество
+            </p>
+            <div class="count dotted__bg dotted__bg--count">
+              <button class="count__minus">
+                -
+              </button>
+              <div class="count__order">
+                0
+              </div>
+              <button class="count__plus">
+                +
+              </button>
+            </div>
+          </li>
+          <li class="product-card__order-item dotted">
+            <p class="product-card__desc-title product-card__order-title-param dotted__bg">
+              Итого
+            </p>
+            <p class="product-card__order-price product-card__order-price--all dotted__bg">
+              55 056 <span> ₽</span>
+            </p>
+          </li>
+        </ul>
+
+        <div class="product-card__order-btn-box">
+          <button class="button product-card__order-btn product-card__order-btn--cart">
+            <img src="assets/img/cart-w.svg" alt="">
+            <span>В корзину</span>
+          </button>
+          <button class="button product-card__order-btn product-card__order-btn--click">
+            <img src="assets/img/click.svg" alt="">
+            <span>Заказ в 1 клик</span>
+          </button>
+        </div>
+
+        <div class="product-card__desc-available">
+          <p class="product-card__desc-available-text">
+            В наличии <span>2</span> шт.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% include "html/includes/popular-swiper.html" %}
+{% endblock %}

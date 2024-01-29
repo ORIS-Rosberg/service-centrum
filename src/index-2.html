@@ -1,0 +1,161 @@
+{% set title = "Ссылки" %}
+{% set bodyClass = "is-main" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+
+
+{% include "html/includes/banner.html" %}
+
+{% include "html/includes/popular-swiper.html" %}
+
+<section class="categories section-style">
+  <div class="container">
+    <div class="title-wrapper">
+      <h2 class="title">
+        Категории
+      </h2>
+    </div>
+    <ul class="categories__list">
+      <li class="categories__item">
+        <a href="" class="categories__link">
+          <img src="../../assets/img/c1.svg" alt="">
+          <span>Моторные<br>
+            масла</span>
+        </a>
+      </li>
+      <li class="categories__item">
+        <a href="" class="categories__link">
+          <img src="../../assets/img/c2.svg" alt="">
+          <span>Трансмиссионные<br>
+            масла</span>
+        </a>
+      </li>
+      <li class="categories__item">
+        <a href="" class="categories__link">
+          <img src="../../assets/img/c3.svg" alt="">
+          <span>Охлаждающие
+            жидкости</span>
+        </a>
+      </li>
+      <li class="categories__item">
+        <a href="" class="categories__link">
+          <img src="../../assets/img/c4.svg" alt="">
+          <span>Смазки</span>
+        </a>
+      </li>
+      <li class="categories__item">
+        <a href="" class="categories__link">
+          <img src="../../assets/img/c5.svg" alt="">
+          <span>Жидкости
+            для гидроусилителя</span>
+        </a>
+      </li>
+      <li class="categories__item">
+        <a href="" class="categories__link">
+          <img src="../../assets/img/c6.svg" alt="">
+          <span>Жидкости
+            тормозные</span>
+        </a>
+      </li>
+      <li class="categories__item">
+        <a href="" class="categories__link">
+          <img src="../../assets/img/c7.svg" alt="">
+          <span>Жидкости
+            стеклоомывающие</span>
+        </a>
+      </li>
+      <li class="categories__item categories__item--link">
+        <div href="" class="categories__link">
+          <img src="../../assets/img/categories-link.jpg" alt="">
+          <button data-fancybox data-src="#order2">
+            Оставить заявку
+          </button>
+
+          <div class="order-modal-area" id="order2">
+            <div class="order-modal">
+
+              <div class="order-modal__title">
+                Оставить заявку
+              </div>
+              <div class="order-modal__sub-title">
+                Оставьте контактные данные и менеджер
+                перезвонит Вам в ближайшее время.
+              </div>
+              <form class="order-modal__form order-modal-form">
+                <label class="order-modal-form__group">
+                  <input type="text" class="order-modal-form__input" placeholder="Ваше имя">
+                </label>
+                <label class="order-modal-form__group">
+                  <input type="tel" class="order-modal-form__input" placeholder="+7(">
+                </label>
+                <label class="order-modal-form__group">
+                  <input type="mail" class="order-modal-form__input" placeholder="E-mail">
+                </label>
+                <label class="order-modal-form__group">
+                  <textarea class="order-modal-form__input order-modal-form__input--textarea" name="comment" id=""
+                    rows="3" placeholder="Ваш комментарий"></textarea>
+                </label>
+
+
+                <label for="checkbox111" class="order-modal-form__check checkbox">
+                  <input class="checkbox__input" type="checkbox" name="data" id="checkbox111">
+                  <span class="checkbox__custom"></span>
+                  <span class="checkbox__text"> Я согласен с <a class="checkbox__text--link" href="#">условиями передачи
+                      данных</a></span>
+                </label>
+                <button type="submit" class="button order-modal-form__button">заказать звонок</button>
+              </form>
+            </div>
+          </div>
+
+          <span>И НАШ СПЕЦИАЛИСТ СВЯЖЕТСЯ С ВАМИ</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+{% include "html/includes/seller-swiper.html" %}
+
+
+<section class="company section-style">
+  <div class="container">
+    <div class="title-wrapper">
+      <h2 class="title">
+        О компании
+      </h2>
+      <a href="" class="title-link">
+        Подробнее
+      </a>
+    </div>
+
+    <div class="company__text-box">
+      <p class="company__text">
+        Наша компания появилась на орловском рынке шин, масел, АКБ, запасных частей и автомобильных аксессуаров
+        сравнительно недавно. Она включает в себя сеть центров «Протектор 57» на Михалицына 10, Ломоносова 6Б ТЦ "Утёс"
+        и Комсомольской 270, легковой и грузовой шиномонтажи, а также интернет-магазин. Эта единая система розничной
+        продажи и предоставления сопутствующих услуг позволяет делать низкие цены на товары, тем самым становясь ближе к
+        клиенту.
+      </p>
+      <p class="company__text">
+        Мы работаем не только с розничными покупателями, но и с юридическими лицами, индивидуальными предпринимателями
+        как за наличный расчет, так по безналичному расчету. Для организаций, работающих на общей системе
+        налогообложения, наша компания при безналичной форме расчетов выделяет НДС.
+      </p>
+      <p class="company__text">
+        Надеемся, что после посещения магазина Вы останетесь довольны и станете нашим постоянным клиентом.
+      </p>
+    </div>
+
+    <div class="company__img-box">
+      <img src="../../assets/img/img1.jpg" alt="">
+      <img src="../../assets/img/img2.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}

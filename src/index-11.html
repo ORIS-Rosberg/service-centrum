@@ -1,0 +1,32 @@
+{% set title = "404" %}
+{% set bodyClass = "is-main" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+{% include "html/includes/breadcrumbs.html" %}
+<section class="results noresults whole-height">
+  <div class="container">
+    <div class="title-wrapper">
+      <h2 class="title">
+        Корзина
+      </h2>
+    </div>
+
+    <div class="noresults__box">
+      <p class="noresults__text">
+        Ваш заказ успешно принят. После оформления заказа на указаный номер телефона придет sms-сообщение с номером
+        заказа. Если вы оставляете адрес электронной почты, то на указанный адрес автоматически сформируется и
+        отправится состав заказа и его описание.
+      </p>
+
+      <a href="" class="button noresults__btn">
+        Продолжить покупки
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+{% endblock %}

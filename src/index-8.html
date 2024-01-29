@@ -1,0 +1,142 @@
+{% set title = "Моторные масла" %}
+{% set bodyClass = "is-main" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+{% include "html/includes/breadcrumbs.html" %}
+
+
+{% include "html/includes/min-banner-swiper.html" %}
+
+
+
+<section class="products-page">
+  <div class="container">
+    <div class="title-wrapper">
+      <h2 class="title">
+        Моторные масла
+      </h2>
+    </div>
+
+
+    <div class="products-page__nav">
+      <button class="button products-page__nav-btn active">
+        Моторные масла
+      </button>
+      <button class="button products-page__nav-btn">
+        Трансмиссионные масла
+      </button>
+      <button class="button products-page__nav-btn">
+        Охлаждающие жидкости
+      </button>
+      <button class="button products-page__nav-btn">
+        Спецжидкости и смазки
+      </button>
+      <button class="button products-page__nav-btn active">
+        Моторные масла
+      </button>
+      <button class="button products-page__nav-btn">
+        Трансмиссионные масла
+      </button>
+      <button class="button products-page__nav-btn">
+        Охлаждающие жидкости
+      </button>
+      <button class="button products-page__nav-btn">
+        Спецжидкости и смазки
+      </button>
+    </div>
+
+    {% include "html/includes/sorting.html" %}
+
+    <div class="products-page__filter-btn-box">
+      <button class="button products-page__filter-btn js-button-filter-mobile">
+        <span class="products-page__filter-btn-title">Фильтры</span>
+        <div class="products-page__filter-icon-box">
+          <img class="svg" src="assets/img/filter-btn.svg">
+          <span class="products-page__filter-btn-count">3</span>
+        </div>
+      </button>
+      {% include "html/includes/filter-mobile.html" %}
+    </div>
+    <div class="products-page__box">
+      <div class="products-page__filters filters">
+        {% include "html/includes/filter.html" %}
+      </div>
+
+      <div class="products-page__body">
+
+        <div class="products-page__bubbles">
+          <div class="bubble">
+            <span>
+              состав
+            </span>
+            <button class="button bubble__btn">
+              <img class="svg bubble__btn-img" src="assets/img/bubble-btn.svg">
+            </button>
+          </div>
+          <div class="bubble">
+            <span>
+              вязкость
+            </span>
+            <button class="button bubble__btn">
+              <img class="svg bubble__btn-img" src="assets/img/bubble-btn.svg">
+            </button>
+          </div>
+          <div class="bubble">
+            <span>
+              производитель
+            </span>
+            <button class="button bubble__btn">
+              <img class="svg bubble__btn-img" src="assets/img/bubble-btn.svg">
+            </button>
+          </div>
+        </div>
+
+        <ul class="products-page__body-list">
+          <li class="products-page__body-item">
+            {% include "html/includes/card.html" %}
+          </li>
+          <li class="products-page__body-item">
+            {% include "html/includes/card.html" %}
+          </li>
+          <li class="products-page__body-item">
+            {% include "html/includes/card2.html" %}
+          </li>
+          <li class="products-page__body-item">
+            {% include "html/includes/card.html" %}
+          </li>
+          <li class="products-page__body-item">
+            {% include "html/includes/card2.html" %}
+          </li>
+          <li class="products-page__body-item">
+            {% include "html/includes/card.html" %}
+          </li>
+          <li class="products-page__body-item">
+            {% include "html/includes/card2.html" %}
+          </li>
+          <li class="products-page__body-item">
+            {% include "html/includes/card.html" %}
+          </li>
+          <li class="products-page__body-item">
+            {% include "html/includes/card2.html" %}
+          </li>
+          <li class="products-page__body-item">
+            {% include "html/includes/card2.html" %}
+          </li>
+          <li class="products-page__body-item">
+            {% include "html/includes/card.html" %}
+          </li>
+        </ul>
+        {% include "html/includes/paginations.html" %}
+      </div>
+
+
+
+    </div>
+
+</section>
+
+
+
+{% endblock %}

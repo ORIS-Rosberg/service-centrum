@@ -1,0 +1,36 @@
+{% set title = "404" %}
+{% set bodyClass = "is-main" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+{% include "html/includes/breadcrumbs.html" %}
+<section class="results noresults whole-height">
+  <div class="container">
+    <div class="title-wrapper title-wrapper__count">
+      <h2 class="title">
+        Результат поиска
+      </h2>
+      <p class="title__count">
+        <span>0</span> товаров
+      </p>
+    </div>
+
+    <div class="noresults__box">
+      <p class="noresults__text">
+        Попробуйте поискать другой товар
+      </p>
+
+      <a href="" class="button noresults__btn">
+        Вернуться на сайт
+      </a>
+      <div class="noresults__img-box">
+        <img src="assets/img/noresults.svg" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+{% endblock %}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles/fancyapps.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
+
+  <script defer src="assets/libs/jquery.js"></script>
+  <script defer src="assets/libs/jquery-ui.js"></script>
+  <script defer src="assets/libs/jquery-ui-touch.js"></script>
+  <script defer src="assets/libs/aos.js"></script>
+  <script defer src="assets/libs/fancyapps.js"></script>
+  <script defer src="assets/js/app.js"></script>
+  <script defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body class="temporary-page">
+  <section class="temporary-page__header-top">
+    <div class="container">
+      <p class="temporary-page__adress">
+        г. Орёл, Московское ш., д. 173
+      </p>
+    </div>
+  </section>
+  <section class="temporary-page__header-bottom">
+    <div class="container">
+      <div class="temporary-page__header-bottom-box">
+        <div class="temporary-page__header-bottom-img-box">
+          <img src="assets/img/logo.svg" alt="Logo" class="temporary-page__header-bottom-img">
+        </div>
+        <div class="temporary-page__header-bottom-contacts">
+          <a href="tel:+74862630023" type="tel"
+            class="temporary-page__header-bottom-contacts-link temporary-page__header-bottom-contacts-link--tel">
+            <img src="assets/img/tel.svg" class="svg">
+            <p>+7 (4862) 63-00-23</p>
+          </a>
+          <a href="mailto:konstantin.glushkov@mtkrosberg.ru" type="mail"
+            class="temporary-page__header-bottom-contacts-link temporary-page__header-bottom-contacts-link--mail">
+            <img src="assets/img/mail.svg" class="svg">
+            <p>konstantin.glushkov<span>@mtkrosberg.ru</span></p>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="temporary-page__banner">
+    <img src="assets/img/banner.jpg" alt="" class="temporary-page__banner-img">
+    <div class="container">
+      <div class="temporary-page__title-box">
+        <h1 class="temporary-page__title">
+          продажа <br>
+          <span>
+            горюче-смазочных материалов
+          </span>
+        </h1>
+        <button data-fancybox data-src="#order" class="temporary-page__btn">
+          Оставить заявку
+        </button>
+
+        <div class="order-modal-area" id="order">
+          <div class="order-modal">
+
+            <div class="order-modal__title">
+              Оставить заявку
+            </div>
+            <div class="order-modal__sub-title">
+              Оставьте контактные данные и менеджер
+              перезвонит Вам в ближайшее время.
+            </div>
+            <form class="order-modal__form order-modal-form">
+              <label class="order-modal-form__group">
+                <input type="text" class="order-modal-form__input" placeholder="Ваше имя">
+              </label>
+              <label class="order-modal-form__group">
+                <input type="tel" class="order-modal-form__input" placeholder="+7(">
+              </label>
+              <label class="order-modal-form__group">
+                <input type="mail" class="order-modal-form__input" placeholder="E-mail">
+              </label>
+              <label class="order-modal-form__group">
+                <textarea class="order-modal-form__input order-modal-form__input--textarea" name="comment" id=""
+                  rows="3" placeholder="Ваш комментарий"></textarea>
+              </label>
+
+
+              <label for="checkbox111" class="order-modal-form__check checkbox">
+                <input class="checkbox__input" type="checkbox" name="data" id="checkbox111">
+                <span class="checkbox__custom"></span>
+                <span class="checkbox__text"> Я согласен с <a class="checkbox__text--link" href="#">условиями передачи
+                    данных</a></span>
+              </label>
+              <button type="submit" class="button order-modal-form__button">заказать звонок</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="temporary-page__brands">
+    <div class="container">
+      <h2 class="temporary-page__h2">
+        Бренды
+      </h2>
+      <div class="temporary-page__brands-grid">
+        <img src="assets/img/1.jpg" alt="">
+        <img src="assets/img/2.jpg" alt="">
+        <img src="assets/img/3.jpg" alt="">
+        <img src="assets/img/4.jpg" alt="">
+        <img src="assets/img/5.jpg" alt="">
+        <img src="assets/img/6.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="temporary-page__contacts">
+    <div class="container">
+      <h2 class="temporary-page__h2">
+        Контакты
+      </h2>
+    </div>
+    <div class="map-wrapper temporary-page__contacts-map">
+      <div class="contact-section__map">
+        <div class="container">
+          <div class="map-placemark-area">
+            <div class="map-placemark">
+              <div class="map-placemark__header">
+                <img src="../../assets/img/logo.svg" alt="ТорнадоОйл" class="map-placemark__logo">
+              </div>
+              <div class="map-placemark__body">
+                <div class="map-placemark__contact">
+                  <div class="map-placemark__icon-area">
+                    <img src="../../assets/img/map.svg" alt="Локация" class="map-placemark__icon">
+                  </div>
+                  <span class="map-placemark__text"><span>Орел,</span> ул.Московское шоссе,173</span>
+                </div>
+                <div class="map-placemark__contact">
+                  <div class="map-placemark__icon-area">
+                    <img src="../../assets/img/tel.svg" alt="Номер телефона">
+                  </div>
+                  <a href="tel:+7486263-00-23" class="map-placemark__text">
+                    +7 (4862) <span>63-00-23</span> </a>
+                </div>
+                <div class="map-placemark__contact">
+                  <div class="map-placemark__icon-area">
+                    <img src="../../assets/img/mail.svg" alt="Номер телефона" class="svg">
+                  </div>
+                  <a href="mailto:konstantin.glushkov@mtkrosberg.ru" class="map-placemark__text">
+                    konstantin.glushkov<span>@mtkrosberg.ru</span>
+                  </a>
+                </div>
+                <!-- <div class="map-placemark__contact">
+                <div class="map-placemark__icon-area">
+                  <img src="../../assets/img/clock.svg" alt="Время">
+                </div>
+                <span class="map-placemark__text"><span>пн-сб </span>с 9.00 до 18.00,</span>
+              </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map" id="map" style="height: 375px; width: 100%; z-index: 2; position: relative">
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="temporary-page__footer">
+    <div class="container">
+      <p class="temporary-page__footer-text">©2023 Масла. Автомасла и смазки по низким ценам от лучших производителей.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init()
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+    integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous">
+    </script>
+  <script>
+
+    window.addEventListener('scroll', function () {
+
+      SmoothScroll({
+        // Время скролла 400 = 0.4 секунды
+        animationTime: 800,
+        // Размер шага в пикселях
+        stepSize: 75,
+
+        // Дополнительные настройки:
+
+        // Ускорение
+        accelerationDelta: 30,
+        // Максимальное ускорение
+        accelerationMax: 2,
+
+        // Поддержка клавиатуры
+        keyboardSupport: true,
+        // Шаг скролла стрелками на клавиатуре в пикселях
+        arrowScroll: 50,
+
+        // Pulse (less tweakable)
+        // ratio of "tail" to "acceleration"
+        pulseAlgorithm: true,
+        pulseScale: 4,
+        pulseNormalize: 1,
+
+        // Поддержка тачпада
+        touchpadSupport: true,
+      })
+    })
+
+  </script>
+
+
+</body>
+
+</html>

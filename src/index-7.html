@@ -1,0 +1,31 @@
+{% set title = "404" %}
+{% set bodyClass = "is-main" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+{% include "html/includes/breadcrumbs.html" %}
+<section class="contacts-page">
+  <div class="container">
+    <div class="title-wrapper title-wrapper__simple">
+      <h2 class="title">
+        Контакты
+      </h2>
+    </div>
+
+    <p class="contacts-page__text">
+      Рассчет стоимости доставки осуществляется у представителей транспортной компании или вашего персонального
+      менеджера. Доставка вашего товара транспортными компаниями осуществляется по территории России и в страны СНГ.
+    </p>
+
+  </div>
+
+
+  {% include "html/includes/map.html" %}
+  
+
+</section>
+
+
+
+{% endblock %}

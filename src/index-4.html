@@ -1,0 +1,33 @@
+{% set title = "404" %}
+{% set bodyClass = "is-main" %}
+
+{% extends "html/layouts/default.html" %}
+
+{% block content %}
+
+<section class="error whole-height">
+  <div class="container">
+    <div class="error__box">
+      <p class="error__text-top">
+        Нет такой страницы!
+      </p>
+      <h2 class="error__title">
+        404
+      </h2>
+      <p class="error__text-bottom">
+        Поизошла ошибка. <br>
+        Попробуйте вернуться на сайт
+      </p>
+      <a href="" class="button error__btn">
+        Вернуться на сайт
+      </a>
+    </div>
+
+  </div>
+  <div class="error__img-box" id="errorImg">
+  </div>
+</section>
+
+
+
+{% endblock %}

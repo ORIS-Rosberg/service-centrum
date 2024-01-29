@@ -1,0 +1,182 @@
+// .banner
+//   position: relative
+//   max-height: 660px
+//   @media all and ($mobile)
+//     min-height: 458px
+//   &__box
+//     display: grid
+//     grid-template-columns: minmax(290px, 389px) auto
+//     margin-bottom: 25px
+//     @media all and ($table)
+//       grid-template-columns: minmax(290px, 330px) 1fr
+//   &__form-box-mob
+//     display: none
+//     @media all and ($mobile)
+//       display: block
+//       .banner__form
+//         margin: 0
+//   &__form
+//     margin-top: 135px
+//     margin-bottom: 150px
+//     position: relative
+//     z-index: 1
+//   &__title-wrapper
+//     display: grid
+//     grid-auto-flow: column
+//     grid-template-columns: minmax(290px, 389px) auto
+//     gap: 100px
+//     @media all and ($table)
+//       grid-template-columns: 1fr 1fr
+//       gap: 30px
+//     @media all and ($mobile)
+//       grid-template-columns: 1fr
+//   &__title
+//     grid-column: 2/3
+//     position: relative
+//     z-index: 101
+//     display: grid
+//     justify-content: end
+//     margin-top: 135px
+//     color: #fff
+//     font-size: 92px
+//     font-weight: 800
+//     text-transform: uppercase
+//     text-decoration: none
+//     @media all and ($middle)
+//       font-size: 68px
+//     @media all and ($table)
+//       font-size: 50px
+//       margin-top: 180px
+//     @media all and ($mobile)
+//       grid-column: 1/2
+//       justify-content: center
+//       font-size: calcFluidFontSize(38, 80, 290, 768, 70)
+//       font-weight: 800
+//       margin-top: 115px
+//       // font: 500 calcFluidFontSize(86, 150, 320, 1170, 150)/calcFluidFontSize(47, 90, 320, 1170, 90) "Kreadon", sans-serif
+//   &__title-span
+//     font-size: 52px
+//     font-weight: 700
+//     @media all and ($middle)
+//       font-size: 40px
+//     @media all and ($table)
+//       font-size: 28px
+//     @media all and ($mobile)
+//       font-size: calcFluidFontSize(21, 46, 290, 768, 40)
+//   &__title-subtitle
+//     padding-top: 30px
+//     font-size: 28px
+//     font-weight: 600
+//     text-transform: none
+//     @media all and ($middle)
+//       font-size: 25px
+//     @media all and ($table)
+//       font-size: 24px
+//     @media all and ($mobile)
+//       font-size: calcFluidFontSize(21, 32, 290, 768, 35)
+//   &__form-title-box
+//     padding: 8px 8px 8px 14px
+//     border-radius: 5px 5px 0px 0px
+//     background: rgba(89, 97, 108, 0.72)
+//   &__form-title
+//     text-align: center
+//     color: #FFF
+//     font-size: 21px
+//     font-weight: 600
+//   &__tab-title
+//     color: #000
+//     font-size: 13px
+//     font-weight: 700
+//     text-transform: uppercase
+//     margin: 9px 0
+//     &::first-of-type
+//       margin-right: 0
+//     &::last-of-type
+//       margin-left: 0
+//   &__tab-form-list
+//     display: grid
+//     gap: 5px
+//   &__tab-form-label
+//     color: #000
+//     font-size: 12px
+//     font-weight: 400
+//     line-height: normal
+//     text-transform: uppercase
+//     margin-bottom: 3px
+//   &__tab-form-btns
+//     display: grid
+//     gap: 10px
+//     justify-items: center
+//     padding-top: 20px
+//     margin-bottom: 3px
+//   &__tab-form-clear
+//     background: none
+//     color: #35363A
+//     font-size: 13px
+//     font-weight: 400
+//     text-decoration-line: underline
+//     text-decoration-skip-ink: none
+//   &__tab-form-submit
+//     padding: 7px 50px
+//     color: #fff
+//     font-size: 14px
+//     font-weight: 700
+//     border-radius: 5px
+//     background: #EA5F12
+//     transition: background $anim
+//     &:active, &:hover, &:focus
+//       background: #D9570E
+
+// .swiper-banner
+//   position: absolute
+//   width: 100%
+//   height: 100%
+//   left: 0
+//   top: 0
+//   object-fit: cover
+//   object-position: 30% 100%
+//   z-index: 0
+//   @media all and ($mobile)
+//     padding-bottom: 25px
+
+// .swiper-slide
+//   text-decoration: none
+// .swiper-banner, .swiper-discounts
+//   &__pagination
+//     position: absolute
+//     bottom: 10px !important
+//     @media all and ($mobile)
+//       bottom: 5px !important
+//     & .swiper-pagination-bullet
+//       width: 43px
+//       height: 6px
+//       background: #fff
+//       border-radius: 3px
+//       @media all and ($mobile)
+//         background: #656777
+//         width: 25px
+//         height: 5px
+// .main-banner-section
+//   min-height: 595px
+//   position: relative
+//   &--small
+//     min-height: 323px
+//     position: relative
+//   &__bg
+//     position: absolute
+//     width: 100%
+//     height: 100%
+//     left: 0
+//     top: 0
+//     object-fit: cover
+//     object-position: 30% 100%
+//     @media all and ($mobile)
+//       object-position: right center
+// .swiper-button-prev
+//   left: 40px
+// .swiper-button-next
+//   right: 40px
+// .swiper-button-prev, .swiper-button-next
+//   color: #fff
+//   @media all and ($middle)
+//     display: none
